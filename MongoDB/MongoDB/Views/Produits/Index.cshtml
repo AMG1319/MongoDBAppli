@@ -31,10 +31,10 @@
                     @Html.DisplayFor(modelItem => item.Quantite)
                 </td>
                 <td>
-                    <a href="@Url.Action("UpdateProduit","Produit", new { productId = item.Id})" class="btn btn-warning">Update</a>
+                    <a href="@Url.Action("UpdateProduit","Produits", new { productId = item.Id})" class="btn btn-warning">Update</a>
                 </td>
                 <td >
-                    @using (Html.BeginForm("DeleteProduit", "Produit", new { productId = item.Id }))
+                    @using (Html.BeginForm("DeleteProduit", "Produits", new { productId = item.Id }))
                     {
                           <button class="btn btn-danger"> Delete</button>
                     }
