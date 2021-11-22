@@ -36,7 +36,7 @@ namespace MongoDB.Controllers
         {
             var product = db.GetProductById(productId);
 
-            return View("CreateProduct", product);
+            return View("CreationProduit", product);
         }
         [HttpPost]
         public ActionResult UpdateProduit(string productId, Produit product)
